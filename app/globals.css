@@ -122,9 +122,9 @@ font-weight: 600;
   align-items: center;
   min-height: 100dvh;
   background: linear-gradient(135deg,rgb(50, 5, 92,0.8),rgb(190, 50, 108,0.8));
-  animation: homebg 2s ease forwards;
+  /* animation: homebg 2s ease forwards; */
 }
-@keyframes homebg{
+/* @keyframes homebg{
   6.25%{
     background: linear-gradient(135deg,rgba(50, 5, 92, 0.75),rgb(190, 50, 108,0.75));
   }
@@ -173,7 +173,7 @@ font-weight: 600;
   100%{
     background: linear-gradient(135deg,rgb(50, 5, 92,0),rgb(190, 50, 108,0));
   }
-}
+} */
 .homecon{
   display: flex;
   flex-direction: column;
