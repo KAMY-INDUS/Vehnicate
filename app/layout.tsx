@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Poppins} from '@next/font/google'
 import "./globals.css";
 import Load from './../components/Load';
+import Car from './../components/Car';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -22,6 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <div className="car absolute">
+          <Car />
+        </div>
         <div className="gradient">
           <div className="grad-top"></div>
           <div className="grad-bottom"></div>

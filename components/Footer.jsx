@@ -4,11 +4,12 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { motion } from 'framer-motion';
 
 library.add(faFacebook, faTwitter, faInstagram, faLinkedin);
 const Footer = () => {
   return (
-    <section id='footer'>
+    <motion.section id='footer' className='relative' initial={{translateY:"20%",opacity:0,filter:"blur(10px)"}} whileInView={{translateY:"0%",opacity:1,filter:"blur(0px)"}} transition={{duration:0.5}}>
         <div className="fup">
         <div className='fabout'>
             <Image src="/logo.png" height={100} width={100} className='flogo'/>
@@ -32,7 +33,7 @@ const Footer = () => {
         <div className="fbottom">
             <span className='copyright'>© Copyright 2024 | Vehnicate</span>
         </div>
-    </section>
+    </motion.section>
   )
 }
 
