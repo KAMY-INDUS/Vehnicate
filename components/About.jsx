@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className="" id="about">
           <motion.span initial={{opacity:0,scale:0,filter:"blur(10px)"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)"}} transition={{duration:0.5}} className="abouthead m-1" style={{position:'relative',zIndex:-1}}>ABOUT</motion.span>
-          <motion.span initial={{opacity:0,filter:"blur(10px)"}} whileInView={{opacity:1,filter:"blur(0px)"}} transition={{duration:0.5}} className="headcon text-nowrap" style={{position:'relative',zIndex:-1}}>
+          <motion.span initial={{opacity:0,filter:"blur(10px)"}} whileInView={{opacity:1,filter:"blur(0px)"}} transition={{duration:0.5}} className="headcon text-justify" style={{position:'relative',zIndex:-1}}>
             We architect an omnipresent network by personifying a pre-existing
             commodity that connects locations in the physical world-vehicles.
           </motion.span>
