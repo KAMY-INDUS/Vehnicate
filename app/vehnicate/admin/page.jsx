@@ -48,7 +48,7 @@ const CreateBlog = () => {
     };
 
     return (
-        <section id="createblog">
+        <section id="createblog" className="upl">
             <span className="formhead tg">Create Blog</span>
             <form className="createblog" onSubmit={createBlog}>
                 <input

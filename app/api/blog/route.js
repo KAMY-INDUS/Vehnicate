@@ -1,6 +1,5 @@
 import Blog from '@/models/blog';
 import { connectToDB } from '@/utils/database';
-
 export const GET = async (req) => {
     try {
         await connectToDB();

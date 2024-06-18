@@ -14,7 +14,7 @@ const Home = () => {
     <section id="home">
       <div className="homecon">
         <Greet />
-        <span className='homeconh'>Welcome to <span className='homeconhl text-nowrap'>VEHNICATE</span></span>
+        <span className='homeconh'>Welcome to <span className='homeconhl'>vehnicate</span></span>
         <div className="homecontent">
           <TypeAnimation
       sequence={[

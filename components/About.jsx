@@ -7,21 +7,22 @@ const About = () => {
     <section className="" id="about">
           <motion.span initial={{opacity:0,scale:0,filter:"blur(10px)"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)"}} transition={{duration:0.5}} className="abouthead m-1" style={{position:'relative',zIndex:-1}}>ABOUT</motion.span>
           <motion.span initial={{opacity:0,filter:"blur(10px)"}} whileInView={{opacity:1,filter:"blur(0px)"}} transition={{duration:0.5}} className="headcon text-justify" style={{position:'relative',zIndex:-1}}>
-            We architect an omnipresent network by personifying a pre-existing
-            commodity that connects locations in the physical world-vehicles.
+            We architect an <span className="highlight">Omnipresent network</span> by <span className="highlight">Personifying</span> a pre-existing
+            commodity that connects locations in the physical world <span className="highlight">Vehicles.</span>
           </motion.span>
+          
           <div className="aboutconh justify-center al" style={{position:'relative',zIndex:-1}}>
             <motion.span initial={{opacity:0,scale:0,filter:"blur(10px)"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)"}}
             transition={{ease:"easeInOut",duration:0.5}} className="we">We</motion.span>
-            <motion.div initial={{opacity:0,scale:1,filter:"blur(10px)",translateX:"0%"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)",translateX:"0%"}} transition={{duration:0.75}}  className="wecon flex flex-col text-xl">
-              <span>
-                Characterise vehicles and enable them to behave/interact just
-                like a social being through AI.
-              </span>
-              <span className="via">VIA WHICH</span>
-              <span>
-                let users express their views, ideas and thoughts differently.
-              </span>
+            <motion.div initial={{opacity:0,scale:1,filter:"blur(10px)",translateX:"0%"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)",translateX:"0%"}} transition={{duration:0.75}}  className="wecon">
+                <div>
+                  Characterise vehicles and enable them to behave/interact just
+                  like a <span className="highlight">Social being</span> through <span className="highlight">AI.</span>
+                </div>
+                <div className="via">VIA WHICH</div>
+                <div>
+                  let users <span className="highlight">Express</span> their views, ideas and thoughts <span className="highlight">Differently.</span>
+                </div>
             </motion.div>
           </div>
           <br/>
@@ -40,8 +41,8 @@ const About = () => {
                     The social media app aims at manifesting an online network
                     for its users where they participate as representatives of
                     vehicles, setting us apart from other platforms Thus
-                    personifying vehicles and letting users "Be differently
-                    Expressive" with their interaction over the online network!
+                    personifying vehicles and letting users <span className="highlight">Be differently
+                    Expressive</span> with their interaction over the online network!
                   </span>
                 </div>
               </motion.div>
@@ -57,22 +58,22 @@ const About = () => {
                     <h2>On-vehicle ecosystem</h2>
                     <br/>
                     <span>
-                      We bring to you, the orva Vehicle display-an outward
-                      facing display mounted on the rear side of vehicles.
-                      (Image) The screen is the face to the vehicle's thoughts
+                      We bring to you, the orva Vehicle display - <b>an outward
+                      facing display mounted on the rear side of vehicles.</b>
+                      The screen is the <span className="highlight">face</span> to the vehicle's thoughts
                       with which it comments on the happenings on roads such as
                       annoying honking, expresses its thoughts and so much more!
                       The orva makes the vehicle a social being and lets users
-                      yet again, "be differently expressive" without the fear of
-                      being neglected and thus 'influential'! This gifts
-                      vehnicate with "physical power"!
+                      yet again, <span className="highlight">Be differently expressive</span> without the fear of
+                      being neglected and thus <span className="highlight">Influential!</span> This gifts
+                      vehnicate with <span className="highlight">Physical Power!</span>
                     </span>
                   </div>
                   <div className="cardorva" initial={{opacity:0,scale:0,filter:"blur(10px)",translateX:"-200px"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)",translateX:0}} transition={{duration:0.5}}>
                     <h2>On-infrastructure</h2>
                     <br/>
                     <span>
-                      "We market your business. Not just advertise" With ORVA,
+                      <span className="highlight">We market your business. Not just advertise</span><br />With ORVA,
                       physical store businesses can attractively present their
                       stories to potential customers
                     </span>

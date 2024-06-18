@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const CreateClient = () => {
-    const [post, setPost] = useState({ blog: "", title: "" });
+    const [post, setPost] = useState({ name: "", service: "",content:""});
     const [image, setImage] = useState(null);
     const [imageBase64, setImageBase64] = useState("");
     const [submitting, setSubmitting] = useState(false);
@@ -28,12 +28,13 @@ const CreateClient = () => {
         setSubmitting(true);
 
         try {
-            const response = await fetch("/api/blog/new", {
+            const response = await fetch("/api/client/new", {
                 method: "POST",
                 body: JSON.stringify({
+                    name:post.name,
                     image:imageBase64,
-                    blog:post.blog,
-                    title:post.title
+                    content:post.content,
+                    service:post.service
                 }),
             });
 
@@ -48,26 +49,26 @@ const CreateClient = () => {
     };
 
     return (
-        <section id="createblog">
+        <section id="createblog" className="upl">
             <span className="formhead tg">Create Client Card</span>
             <form className="createblog" onSubmit={createBlog}>
                 <input
                     type="text"
                     placeholder="Enter Client Name"
-                    name="title"
+                    name="name"
                     id="title"
                     onChange={inputUpload}
                 />
                 <input
                     type="text"
                     placeholder="Enter Service Title"
-                    name="title"
+                    name="service"
                     id="title"
                     onChange={inputUpload}
                 />
                 <textarea
-                    name="blog"
-                    cols="30"
+                    name="content"
+                    cols="20"
                     rows="8"
                     placeholder="Enter Service Content"
                     onChange={inputUpload}
@@ -80,7 +81,7 @@ const CreateClient = () => {
                     onChange={imageUpload}
                     placeholder="Upload Client Image"
                 />
-                <input type="submit" value={submitting ? "Submitting..." : "Submit"} />
+                <button Nametype="submit" value={submitting ? "Submitting..." : "Submit"}>Submit</button>
             </form>
         </section>
     );

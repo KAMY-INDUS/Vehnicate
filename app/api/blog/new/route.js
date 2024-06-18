@@ -1,6 +1,5 @@
 import Blog from '@/models/blog';
 import { connectToDB } from '@/utils/database';
-import { error } from 'console';
 
 export const POST = async (req) => {
     try {

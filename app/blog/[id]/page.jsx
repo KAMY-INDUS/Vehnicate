@@ -15,7 +15,7 @@ const ViewBlog = () => {
         fetchBlog();
     },[])
   return (
-    <section id='blogview'>
+    <section id='blogview' className="z-50">
         <div className="blogcontent">
         <span className='viewbloghead tg'>{blog.title}</span>
         {blog.image && <Image src={blog.image} width={500} height={500} className='viewblogimg'/>}

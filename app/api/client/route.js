@@ -1,11 +1,11 @@
-import Blog from '@/models/blog';
+import Client from '@/models/client';
 import { connectToDB } from '@/utils/database';
 
 export const GET = async (req) => {
     try {
         await connectToDB();
-        const blogs = await Blog.find({});
-        return new Response(JSON.stringify(blogs), {
+        const clients = await Client.find({});
+        return new Response(JSON.stringify(clients), {
             status: 200,
             headers: {
                 'Content-Type': 'application/json'
