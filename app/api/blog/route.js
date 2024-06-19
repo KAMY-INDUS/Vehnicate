@@ -1,11 +1,12 @@
 import Blog from '@/models/blog';
 import { connectToDB } from '@/utils/database';
+import { NextResponse } from 'next/server';
 export const revalidate = 0;
 export const GET = async (req) => {
     try {
         await connectToDB();
         const blogs = await Blog.find({});
-        return new Response(JSON.stringify(blogs), {
+        return new NextResponse(JSON.stringify(blogs), {
             status: 200,
             headers: {
                 'Content-Type': 'application/json'
