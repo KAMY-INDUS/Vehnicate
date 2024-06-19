@@ -14,7 +14,7 @@ const Client = () => {
         fetchBlogs();
     }, []);
   return (
-    <section id='blog'>
+    <section id='community'>
         <motion.h1 className='communityhead tg' initial={{opacity:0,scale:0,filter:"blur(10px)",translateY:"20%"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)",translateY:"0%"}} transition={{duration:0.5}}>Community</motion.h1>
         <div className="clients flex">
         {blogs.map((blog)=>(

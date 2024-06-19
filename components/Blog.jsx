@@ -26,7 +26,7 @@ const Blog = () => {
                 <span className='blogh'>{blog.title}</span>
                 {blog.image && <Image src={blog.image} height={200} width={200} className='blogimg'/>}
                 <span className='blogmes'>
-                    {blog.image?(((blog.blog).length)>80?`${blog.blog.slice(0,80)} . .  . Read More`:blog.blog):(((blog.blog).length)>200?`${blog.blog.slice(0,200)}...Read More`:blog.blog)}
+                    {(((blog.blog).length)>150?`${blog.blog.slice(0,150)}...Read More`:blog.blog)}
                 </span>
             </motion.div>
         ))}
