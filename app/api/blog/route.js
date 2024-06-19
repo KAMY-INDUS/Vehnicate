@@ -1,5 +1,6 @@
 import Blog from '@/models/blog';
 import { connectToDB } from '@/utils/database';
+export const revalidate = 0;
 export const GET = async (req) => {
     try {
         await connectToDB();
