@@ -16,7 +16,7 @@ const Footer = () => {
             <span className='flogocon'>Be Differently Expressive</span>
         </div>
         <div className="infoc">
-            <span>Email: <Link href="mailto:hn.webqueries@gmail.com"></Link>ss.sottallu@gmail.com</span>
+            <span>Email: <Link href="mailto:hn.webqueries@gmail.com"></Link>vehnicate.air@gmail.com</span>
             <span>Phone: <Link href="tel:91+77081 61551">+91 77081 61551</Link></span>
         </div>
         <div className="newsletter">

@@ -206,6 +206,9 @@ body {
     /* transform: translateX(100px); */
 }
 
+.vehcarimg{
+    border-radius: 20px;
+}
 .homecongreet {
     font-size: 2.5rem;
 }

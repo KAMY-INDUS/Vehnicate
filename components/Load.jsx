@@ -15,13 +15,13 @@ const Load = () => {
     <div className="loadsrc">
         <div className="loadcon">
         <div className="vechicle">
-            {disappear?<span style={{fontWeight:"700"}}>V E H</span>:<span className='veh'>VEH</span>}
-            {disappear?null:<span className='icle'>ICLE</span>}
+            {disappear?<span style={{fontWeight:"700"}}>v e h</span>:<span className='veh'>veh</span>}
+            {disappear?null:<span className='icle'>icle</span>}
         </div>
         {disappear?null:<span className='plus'>+</span>}
         <div className="communicate">
-               {disappear?null:<span className='commu'>COMMU</span>}
-         {disappear?<span style={{fontWeight:"700"}}>N I C A T E</span>:<span className='nicate'>NICATE</span>}
+               {disappear?null:<span className='commu'>commu</span>}
+         {disappear?<span style={{fontWeight:"700"}}>n i c a t e</span>:<span className='nicate'>nicate</span>}
         </div>
         </div>
     </div>

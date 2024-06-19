@@ -18,11 +18,11 @@ const Home = () => {
         <div className="homecontent">
           <TypeAnimation
       sequence={[
-        'Ecosystem for Vehicle',
+        'Ecosystem for Vehicles',
         1500,
-        'Ecosystem of Vehicle',
+        'Ecosystem of Vehicles',
         1500,
-        'Ecosystem by Vehicle',
+        'Ecosystem by Vehicles',
         1500
       ]}
       wrapper="span"

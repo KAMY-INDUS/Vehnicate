@@ -31,7 +31,7 @@ const About = () => {
             <div className="cards">
               <div className="orva">
                 <div className="orvaside">
-                  <motion.span initial={{opacity:0,scale:0,filter:"blur(10px)"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)"}} transition={{duration:0.5}} className="orvash">Hn-Air</motion.span>
+                  <motion.span initial={{opacity:0,scale:0,filter:"blur(10px)"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)"}} transition={{duration:0.5}} className="orvash">hnAir</motion.span>
                   <motion.span initial={{opacity:0,scale:0,filter:"blur(10px)"}} whileInView={{opacity:1,scale:1,filter:"blur(0px)"}} transition={{duration:0.6}} className="orvasc">Vehnicate AI for Roads</motion.span>
                 </div>
               <motion.div className="orvacon" initial={{opacity:0,filter:"blur(10px)",translateX:"-100px"}} whileInView={{opacity:1,filter:"blur(0px)",translateX:0}} transition={{duration:0.5}}>
@@ -60,6 +60,7 @@ const About = () => {
                     <span>
                       We bring to you, the orva Vehicle display - <b>an outward
                       facing display mounted on the rear side of vehicles.</b>
+                      <Image src="/vehcar.jpg" height={1000} width={1000} className="vehcarimg"/>
                       The screen is the <span className="highlight">face</span> to the vehicle's thoughts
                       with which it comments on the happenings on roads such as
                       annoying honking, expresses its thoughts and so much more!
