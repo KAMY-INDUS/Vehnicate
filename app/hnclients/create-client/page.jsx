@@ -8,6 +8,7 @@ const CreateClient = () => {
     const [imageBase64, setImageBase64] = useState("");
     const [submitting, setSubmitting] = useState(false);
     const router = useRouter();
+    const [verify,setVerify]=useState(false);
 
     const imageUpload = (e) => {
         const img = e.target.files[0];
@@ -48,7 +49,17 @@ const CreateClient = () => {
         }
     };
 
+    const handleSubmit=(e)=>{
+        if(e.target.email.value=="vehnicatemembers@gmail.com"){
+            if(e.target.password.value=="hnmembers"){
+                setVerify(true);
+            }
+        }
+    }
+
     return (
+        <>
+        {verify?
         <section id="createblog" className="upl">
             <span className="formhead tg">Create Client Card</span>
             <form className="createblog" onSubmit={createBlog}>
@@ -84,6 +95,16 @@ const CreateClient = () => {
                 <button Nametype="submit" value={submitting ? "Submitting..." : "Submit"}>Submit</button>
             </form>
         </section>
+        :
+        <div className="verify-div">
+            <span className="formhead tg">VERIFICATION</span>
+            <form className="createblog" onSubmit={handleSubmit} >
+                <input className="verify-email" name="email" placeholder="enter your email" required />
+                <input className="verify-pass" name="password" placeholder="enter your password" spellCheck="false" required />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>}
+        </>
     );
 };
 

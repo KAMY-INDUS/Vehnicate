@@ -962,7 +962,15 @@ label {
 
 
 }
-
+.verify-div{
+    height: 100vh;
+    width:100%;
+    display:flex;
+    gap:1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #blogview {
     display: flex;
     flex-direction: column;
